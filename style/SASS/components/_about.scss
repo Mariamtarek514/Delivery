@@ -1,0 +1,11 @@
+@use "../layout/layout";
+/* ========== Start about section =======*/
+
+.about {
+    &__container {
+        @extend %section__gap;
+    }
+    &__data {
+        @extend %section__descrption;
+    }
+}

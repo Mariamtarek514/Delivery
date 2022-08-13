@@ -1,0 +1,51 @@
+@use "../helpers/veriables" as *;
+/*  scroll arrow*/
+.scrollUp {
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+    z-index: 10;
+    background-color: var(--first-color);
+    width: fit-content;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    opacity: 0.8;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    &:hover {
+        opacity: 1;
+    }
+    &__icon {
+        font-size: 1rem;
+        color: var(--title-color);
+    }
+}
+
+/* scroll bar*/
+::-webkit-scrollbar {
+    width: 0.8rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    background-color: var(--scroll-bar-color);
+    &-thumb {
+        background-color: var(--scroll-thumb-color);
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        &:hover {
+            background-color: var(--text-color-light);
+        }
+    }
+}

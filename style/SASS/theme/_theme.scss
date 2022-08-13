@@ -1,0 +1,19 @@
+@use "../helpers/veriables" as *;
+@use "../helpers/mixin" as *;
+/* ============== Change theme ==============*/
+/* theme varialbes*/
+body.dark-theme {
+    @include dark-theme;
+}
+/* theme buttons*/
+.change-theme {
+    position: absolute;
+    right: 1.5rem;
+    top: 2.5rem;
+    color: var(--title-color);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.dark-theme .footer {
+    background-color: var(--container-color);
+}

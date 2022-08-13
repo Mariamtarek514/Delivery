@@ -1,0 +1,27 @@
+@use "../helpers/veriables" as *;
+
+@use "../layout/layout";
+
+/*  ========= start contact sec*/
+.contact {
+    &__container {
+        padding-bottom: 3rem;
+    }
+    &__description {
+        @extend %section__descrption;
+    }
+    &__contact {
+        row-gap: 0.75rem;
+    }
+    &__address {
+        font: {
+            size: var(--small-font-size);
+            weight: var(--font-semi-bold);
+        }
+        color: var(--title-color);
+    }
+    &__information {
+        color: var(--text-color);
+        font-weight: initial;
+    }
+}

@@ -1,0 +1,10 @@
+@use "../layout/layout";
+/* =================== security ================*/
+.security {
+    &__container {
+        @extend %section__gap;
+    }
+    &__data {
+        @extend %section__descrption;
+    }
+}

@@ -1,0 +1,47 @@
+@use "../helpers/veriables" as *;
+
+* {
+    margin: 0;
+    &::before,
+    &::after {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin-top: var(--header-height);
+    font: {
+        family: var(--body-fonts);
+        size: var(--normal-font-size);
+    }
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    text-transform: capitalize;
+}
+h1,
+h2,
+h3 {
+    font-weight: var(--font-semi-bold);
+    line-height: 1.5;
+    color: var(--title-color);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}

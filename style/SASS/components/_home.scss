@@ -1,0 +1,19 @@
+@use "../helpers/veriables" as *;
+
+/*=========== Home ============*/
+.home {
+    &__container {
+        row-gap: 3rem;
+    }
+    &__title {
+        font: {
+            weight: var(--font-bold);
+            size: var(--biggest-font-size);
+        }
+        margin-bottom: var(--mb-0-75);
+    }
+    &__description {
+        margin-bottom: var(--mb-2);
+        line-height: 1.6;
+    }
+}
